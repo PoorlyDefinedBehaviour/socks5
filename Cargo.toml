@@ -1,0 +1,15 @@
+[package]
+name = "socks5"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.72"
+tokio = { version = "1.31.0", features = ["rt-multi-thread", "macros", "net", "time", "io-util"] }
+tokio-byteorder = "0.3.0"
+
+[dev-dependencies]
+quickcheck = "1.0.3"
+quickcheck_macros = "1.0.0"
